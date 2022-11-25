@@ -1,0 +1,95 @@
+body {
+    background: linear-gradient(to right, #4568dc, #b06ab3);
+    width: 500px;
+    margin: 4% auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 5px;
+}
+
+.calculator {
+    margin-top: 125px;
+    padding: 20px;
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.7);
+    background-color: black;
+    animation: rotate 3s 1;
+}
+
+@keyframes rotate {
+    0% {
+        transform: perspective(800px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(800px) rotateY(360deg);
+    }
+}
+
+#input {
+    padding-right: 10px;
+    border: 1px solid #ddd;
+    color: rgba(255, 255, 255, 0.75);
+    height: 60px;
+    padding-top: 10px;
+    text-align: right;
+    margin-right: 6px;
+    font-size: 2.23rem;
+    overflow-x: auto;
+    transition: all .2s ease-in-out;
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);
+}
+
+.operators div {
+    display: inline-block;
+    border: 1px solid #bbb;
+    border-radius: 1px;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 4px 10px 0;
+    cursor: pointer;
+    background: linear-gradient(to right, #7b4397, #dc2430);
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+  
+.operators div:active {
+    font-weight: bold;
+}
+
+.numbersPanel {
+    display: inline-block;
+}
+
+.numbers div {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 4px 10px 0;
+    cursor: pointer;
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.numbers div:active {
+    font-weight: bold;
+}
+
+div.equal {
+    display: inline-block;
+    border: 1px solid #3079ED;
+    border-radius: 1px;
+    width: 17%;
+    text-align: center;
+    padding: 101px 10px;
+    margin: 10px 6px 10px 0;
+    vertical-align: top;
+    cursor: pointer;
+    color: #FFF;
+    background: linear-gradient(to right, #000428, #004e92);
+    transition: all .2s ease-in-out;
+}
+
+div.equal:active {
+    font-weight: bold;
+}
